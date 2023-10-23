@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="380.0" prefWidth="477.0" spacing="20.0" style="-fx-background-color: #b5c5ff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bmin.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label prefHeight="28.0" prefWidth="132.0" text="weight">
+        <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="300.0" top="-80.0" />
+        </VBox.margin>
+    </Label>
+    <TextField fx:id="weightField">
+        <VBox.margin>
+            <Insets top="-30.0" />
+        </VBox.margin>
+    </TextField>
+    <Label text="height" textAlignment="CENTER" textFill="#050505">
+        <VBox.margin>
+            <Insets right="380.0" />
+        </VBox.margin>
+    </Label>
+    <TextField fx:id="heightField">
+        <VBox.margin>
+            <Insets top="-10.0" />
+        </VBox.margin>
+    </TextField>
+    <Label fx:id="bmiLabel" prefHeight="52.0" prefWidth="165.0" style="-fx-background-color: #0003;" text="BMI">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <padding>
+         <Insets left="40.0" />
+      </padding></Label>
+    <Button mnemonicParsing="false" onAction="#calculateBMI" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #7e7c7e;" text="Enter" textFill="WHITE">
+        <VBox.margin>
+            <Insets />
+        </VBox.margin>
+    </Button>
+    <Button mnemonicParsing="false" onAction="#clearFields" prefHeight="26.0" prefWidth="91.0" style="-fx-background-color: #868686;" text="Clear" textFill="#fcfcfc" />
+</VBox>
